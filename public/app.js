@@ -53,14 +53,14 @@ App = {
 	},
 
 	transferownership : function (){
-		App.new_owner = $('#trasnferOwnership').val();
+		App.new_owner = $('#other_owner').val();
 		$.getJSON('./registry.json',function(landregistry){
 
 			App.contracts.registryContract = TruffleContract(landregistry);
 			App.contracts.registryContract.setProvider(App.web3Provider);
 			App.contracts.registryContract.deployed().then(function(registryContract){
 
-				return registryContract.transferownership(App.new_owner,{
+				return registryContract.transferOwnership(App.new_owner,{
 					value:0,
 					gas:200000
 				});
