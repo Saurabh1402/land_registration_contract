@@ -1,0 +1,22 @@
+{
+	"app": "land registry",
+	"version": "1.0.0",
+	"description": "This is for the land registry",
+	"author": "sumit",
+	"license": "ISC",
+	"main": "truffle.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"dev": "lite-server"
+	},
+	"devDependencies": {
+		"lite-server": "^2.3.0"
+	},
+	"dependencies": {
+		"cors": "^2.8.4",
+		"http-server": "^0.11.1",
+		"truffle-hdwallet-provider": "0.0.5"
+	}
+}

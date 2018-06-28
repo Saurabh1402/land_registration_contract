@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Land Registry</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+
+</head>
+<body style="background:linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);">
+
+<div class="jumbotron text-center">
+  <h3>Land Registry & Validation</h3>
+  
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Set details for Registry</h3>
+      
+    <input type="text" required="" placeholder="owner address"  class="txt" id="owner_address">
+    <input type="text" required="" placeholder="coordinates" class="txt" id="coordinates">
+    <input type="text" required="" placeholder="price" class="txt" id="price">
+    <button type="button" class="btn" id="InitiateContract">Submit</button>
+
+    </div>
+    <div class="col-sm-6">
+      <h3>Add signature</h3>      
+     <input type="text" placeholder="Digital finger print" class="txt" id="fingerPrint">
+     <input type="text"  placeholder="Signature"  class="txt" id="signature">
+      <button type="button" class="btn" id="InitiateContract">Submit</button>
+    </div>
+   
+  </div>
+  <div class="hash">
+    <h4>Registry completed Hash:_____________</h4>
+  </div>
+   <div class="col-sm-4">
+      <h3>Transfer Ownership</h3>
+       <input type="text" placeholder="Other owner address" name="name" class="txt" id="other_owner">
+          <button type="button" class="btn" id="trasnferOwnership">Submit</button>
+          <h4>New hash of owner:_______________</h4>
+    </div>
+</div>
+  <script src="./jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./web3.min.js"></script>
+  <script src="./truffle-contract.min.js"></script>
+  <script src="./app.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
